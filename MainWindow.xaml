@@ -1,0 +1,90 @@
+﻿<Window x:Class="SaladNOW.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SaladNOW"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" Background="Black">
+    <Grid>
+        <Image x:Name="gridProducts" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Source="img/logo.png" Margin="356,10,0,0" OpacityMask="{x:Null}"/>
+        <Grid HorizontalAlignment="Left" Height="262" Margin="30,28,0,0" VerticalAlignment="Top" Width="262" Background="#FF342F2F">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="88"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <!-- -->
+            <Button x:Name="btnCucumber" Background="Transparent" Grid.Column="0" Grid.Row="0" BorderBrush="{x:Null}" Click="btnCucumber_Click">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="img/004-fruit.png" Stretch="None" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="btnPepper" Background="Transparent" Grid.Column="1" Grid.Row="0" BorderBrush="{x:Null}" Click="btnPepper_Click">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="img/001-pepper.png" Stretch="None" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="btnTomato" Background="Transparent" Grid.Column="2" Grid.Row="0" BorderBrush="{x:Null}" Click="btnTomato_Click">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="img/008-tomato.png" Stretch="None" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="btnOnion" Background="Transparent" Grid.Column="0" Grid.Row="1" BorderBrush="{x:Null}" Click="btnOnion_Click">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="img/002-onion.png" Stretch="Fill" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="btnCorn" Background="Transparent" Grid.Column="1" Grid.Row="1" BorderBrush="{x:Null}" Click="btnCorn_Click">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="img/006-food.png" Stretch="None" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="btnChicken" Background="Transparent" Grid.Column="2" Grid.Row="1" BorderBrush="{x:Null}" Click="btnChicken_Click">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="img/007-meat.png" Stretch="None" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="btnBroccoli" Background="Transparent" Grid.Column="0" Grid.Row="2" BorderBrush="{x:Null}" Click="btnBroccoli_Click">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="img/009-broccoli.png" Stretch="None" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="btnSalad" Background="Transparent" Grid.Column="1" Grid.Row="2" BorderBrush="{x:Null}" Click="btnSalad_Click">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="img/010-salad.png" Stretch="None" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="btnOlives" Background="Transparent" Grid.Column="2" Grid.Row="2" BorderBrush="{x:Null}" Click="btnOlives_Click">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="img/003-food-2.png" Stretch="None" />
+                </StackPanel>
+            </Button>
+        </Grid>
+        <Grid x:Name="gridButtons" HorizontalAlignment="Left" Height="175" Margin="319,115,0,0" VerticalAlignment="Top" Width="169">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label x:Name="lblMessage" Content="Wybierz produkty" Grid.RowSpan="2" Grid.ColumnSpan="2" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center"/>
+            <TextBox x:Name="txtPrice" Grid.ColumnSpan="2" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" Text="Cena" VerticalAlignment="Center" Width="80"/>
+            <StackPanel x:Name="spRadioButtons" Grid.Row="1">
+                <RadioButton x:Name="rb100" Padding="2" Content="100g" HorizontalAlignment="Left" Foreground="White" Checked="rb100_Checked" />
+                <RadioButton x:Name="rb200" Padding="2" Content="200g" HorizontalAlignment="Left" Foreground="White" Checked="rb200_Checked" />
+                <RadioButton x:Name="rb300" Padding="3" Content="300g" HorizontalAlignment="Left" Background="White" Foreground="White" Checked="rb300_Checked" />
+            </StackPanel>
+            <Button x:Name="btnCollect" Grid.Column="1" Grid.Row="1" MaxHeight="20" MaxWidth="50" Content="Policz" Click="btnCollect_Click"/>
+        </Grid>
+    </Grid>
+</Window>

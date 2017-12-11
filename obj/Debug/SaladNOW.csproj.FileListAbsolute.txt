@@ -1,0 +1,15 @@
+C:\Users\Olo\source\repos\SaladNOW\SaladNOW\bin\Debug\SaladNOW.exe.config
+C:\Users\Olo\source\repos\SaladNOW\SaladNOW\bin\Debug\SaladNOW.exe
+C:\Users\Olo\source\repos\SaladNOW\SaladNOW\bin\Debug\SaladNOW.pdb
+C:\Users\Olo\source\repos\SaladNOW\SaladNOW\obj\Debug\SaladNOW.csprojResolveAssemblyReference.cache
+C:\Users\Olo\source\repos\SaladNOW\SaladNOW\obj\Debug\MainWindow.g.cs
+C:\Users\Olo\source\repos\SaladNOW\SaladNOW\obj\Debug\App.g.cs
+C:\Users\Olo\source\repos\SaladNOW\SaladNOW\obj\Debug\SaladNOW_MarkupCompile.cache
+C:\Users\Olo\source\repos\SaladNOW\SaladNOW\obj\Debug\SaladNOW_MarkupCompile.lref
+C:\Users\Olo\source\repos\SaladNOW\SaladNOW\obj\Debug\MainWindow.baml
+C:\Users\Olo\source\repos\SaladNOW\SaladNOW\obj\Debug\SaladNOW.g.resources
+C:\Users\Olo\source\repos\SaladNOW\SaladNOW\obj\Debug\SaladNOW.Properties.Resources.resources
+C:\Users\Olo\source\repos\SaladNOW\SaladNOW\obj\Debug\SaladNOW.csproj.GenerateResource.Cache
+C:\Users\Olo\source\repos\SaladNOW\SaladNOW\obj\Debug\SaladNOW.csproj.CoreCompileInputs.cache
+C:\Users\Olo\source\repos\SaladNOW\SaladNOW\obj\Debug\SaladNOW.exe
+C:\Users\Olo\source\repos\SaladNOW\SaladNOW\obj\Debug\SaladNOW.pdb
