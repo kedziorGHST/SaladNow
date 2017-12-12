@@ -1,0 +1,4 @@
+# SaladNow
+WPF
+
+Projekt zaliczeniowy
