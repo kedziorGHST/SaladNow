@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace SaladNOW
 {
-    class Salad
+    public class Salad
     {
         int id;
-       
-        //int <List> products;
-        //Trzeba zrobić małą bazę danych produktów i sałatki, kalorie w sumie tez
+        List<int> ProductList = new List<int>();
+        double price;   
+        
+        public Salad(int id, List<int> ProductList, double price)
+        {
+            this.id = id;
+            this.ProductList = ProductList;
+            this.price = price;
+        }
     }
 }
