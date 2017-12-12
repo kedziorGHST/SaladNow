@@ -77,14 +77,16 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Label x:Name="lblMessage" Content="Wybierz produkty" Grid.RowSpan="2" Grid.ColumnSpan="2" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center"/>
-            <TextBox x:Name="txtPrice" Grid.ColumnSpan="2" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" Text="Cena" VerticalAlignment="Center" Width="80"/>
+            <Label x:Name="lblTransparent" Content="Wybierz produkty" Grid.RowSpan="2" Grid.ColumnSpan="2" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center"/>
+            <Label x:Name="lblMessage" Content="" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Background="{x:Null}" Foreground="Red" HorizontalAlignment="Center"/>
+            <TextBox x:Name="txtPrice" Grid.ColumnSpan="2" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" Text="Do zapłaty" VerticalAlignment="Center" Width="80" IsEnabled="False"/>
             <StackPanel x:Name="spRadioButtons" Grid.Row="1">
-                <RadioButton x:Name="rb100" Padding="2" Content="100g" HorizontalAlignment="Left" Foreground="White" Checked="rb100_Checked" />
-                <RadioButton x:Name="rb200" Padding="2" Content="200g" HorizontalAlignment="Left" Foreground="White" Checked="rb200_Checked" />
-                <RadioButton x:Name="rb300" Padding="3" Content="300g" HorizontalAlignment="Left" Background="White" Foreground="White" Checked="rb300_Checked" />
+                <RadioButton x:Name="rb100" Padding="2" Content="100g" HorizontalAlignment="Left" Foreground="White" Checked="rb100_Checked" IsChecked="True" GroupName="Portion" />
+                <RadioButton x:Name="rb200" Padding="2" Content="200g" HorizontalAlignment="Left" Foreground="White" Checked="rb200_Checked" GroupName="Portion" />
+                <RadioButton x:Name="rb300" Padding="3" Content="300g" HorizontalAlignment="Left" Background="White" Foreground="White" Checked="rb300_Checked" GroupName="Portion" />
             </StackPanel>
-            <Button x:Name="btnCollect" Grid.Column="1" Grid.Row="1" MaxHeight="20" MaxWidth="50" Content="Policz" Click="btnCollect_Click"/>
+            <Button x:Name="btnCollect" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" MaxHeight="20" MaxWidth="50" Content="Policz" Click="btnCollect_Click" BorderBrush="#FFC81A1A"/>
+            <Button x:Name="btnRaport" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="1" MaxHeight="20" MaxWidth="50" Content="Wartości" BorderBrush="#FFC81A1A"/>
         </Grid>
     </Grid>
 </Window>

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Input;
 
 namespace SaladNOW
 {
@@ -185,8 +186,16 @@ namespace SaladNOW
 
         private void btnCollect_Click(object sender, RoutedEventArgs e)
         {
-            priceAfterMul= multiple * price;
-            txtPrice.Text = Convert.ToString(priceAfterMul);
+            if (price == 0)
+            {
+                MessageBox.Show("Nie wybrano żadnego produktu z listy.","Uwaga!");
+                txtPrice.Text = "";
+            }else
+            {
+                lblMessage.Content = "";
+                priceAfterMul = multiple * price;
+                txtPrice.Text = Convert.ToString(priceAfterMul);
+            }
         }
     }
 }
